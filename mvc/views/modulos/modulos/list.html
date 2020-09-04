@@ -1,0 +1,72 @@
+$ def con (resultado)
+<! DOCTYPE html >
+< html  lang = " en " >
+    < cabeza >
+        < title > Ver alumnos registrados </ title >
+        < meta  charset = " utf-8 " >
+        < meta  nombre = " viewport " content = " width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no " >
+        < link  rel = " stylesheet " href = " https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " 
+        
+    </ cabeza >
+    < nav  class = " navbar navbar-expand-lg navbar-light bg-light " >
+        < Una  clase = " barra de navegación de la marca " href =" / " > Que DESEA Realizar </ a >
+        < button  class = " navbar-toggler " type = " button " data-toggle = " collapse " data-target = " #navbarSupportedContent " aria-controls = " navbarSupportedContent " aria- extended = " false " aria-label = " Alternar navegación " >
+          < span  class = " navbar-toggler-icon " > </ span >
+        </ botón >
+      
+        < div  class = " collapse navbar-collapse " id = " navbarSupportedContent " >
+          < ul  class = " navbar-nav mr-auto " >
+            < li  class = " nav-item active " >
+        
+            < li  class = " menú desplegable de elementos de navegación " >
+              < Una  clase = " nav-enlace-desplegable de palanca " href =" # " ID =" navbarDropdown " roles =" botón " de datos de palanca =" desplegable " aria-haspopup =" verdad " aria-expandida =" false " >
+                Comportamiento
+              </ a >
+              < div  class = " menú desplegable " aria-labelledby = " navbarDropdown " >
+                < Una  clase = " desplegable ítems " href =" / insert " > Insertar </ a >
+                < div  class = " dropdown-divider " > </ div >
+                
+                
+              </ div >
+              < li  class = " nav-item " >
+                < Una  clase = " nav-link " href =" / " > Volver </ una >
+            </ li >
+        </ div >
+      </ nav >
+      < div  class = " dropdown-divider " > </ div >
+        < cuerpo >
+        < div  class = " contenedor " >
+            < div  class = " table-responsive " >
+            < table  class = " table table-striped table-border table-hover table-condensed " >
+                < thead  class = " thead-dark " >
+                    < tr >
+                        < th  scope = " col " > id </ th >
+                        < th  scope = " col " > Nombre </ th >
+                        < th  scope = " col " > Primer apellido </ th >
+                        < th  scope = " col " > Segundo apellido </ th >
+                        
+                    </ tr >
+                </ thead >
+                < tbody >
+                    $ por fila en el resultado:
+                        < tr >
+                            < td > $ fila ['id_persona'] </ td >
+                            < Td > < un  href = " / view / $ fila [ 'id_persona'] " > $ fila [ 'nombre'] </ una > </ td >
+                            < td > $ fila ['apellido_p'] </ td >
+                            < td > $ fila ['apellido_m'] </ td >
+                            < Td > < un  href = " / delete / $ fila [ 'id_persona'] " > Eliminar </ a > </ td >
+                            < Td > < un  href = " / actualizar / $ fila [ 'id_persona'] " > actualización </ a > </ td >
+                            
+                        </ tr >
+                </ tbody      
+            </ tabla >
+            </ div >
+        </ div >
+    </ cuerpo >
+    < script  src = " https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integridad = " sha384-q8i / X + 965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH + 8abtTE1Pi6jizo " crossorigin = " anónimo " > </ script >
+        < script  src = " https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integridad = " sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin = " anónimo " > </ script >
+        < script  src = " https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integridad = " sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf / nJGzIxFDsf4x0xIM + B07jRM " crossorigin = " anónimo " > </ script >
+</ html >
